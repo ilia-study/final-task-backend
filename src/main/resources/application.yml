@@ -1,0 +1,25 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    enabled-protocols: TLSv1.2
+    protocol: TLS
+    key-store-type: PKCS12
+    key-store: classpath:keystore/keystore.p12
+    key-store-password:
+  datasource:
+    url: jdbc:h2:~/TendersServer;DB_CLOSE_ON_EXIT=TRUE;AUTO_SERVER=TRUE;INIT=CREATE SCHEMA IF NOT EXISTS tenders_server\;SET SCHEMA tenders_server\;
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: public
+        show-sql: true
+        hbm2ddl:
+          auto: create-drop
+        temp:
+          use_jdbc_metadata_defaults: false
