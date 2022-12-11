@@ -12,6 +12,7 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Base64;
 import java.util.Date;
+import java.util.Objects;
 import java.util.UUID;
 
 public class JwtUtil {
@@ -21,8 +22,8 @@ public class JwtUtil {
     Instant now = Instant.now();
 
     return Jwts.builder()
-      .claim("name", userDto.getName())
-      .claim("login", userDto.getLogin())
+      .claim("name", Objects.equals(userDto.getName(), "admin") ? userDto.getName() : "user")
+      .claim("login", Objects.equals(userDto.getLogin(), "admin") ? userDto.getLogin() : "user")
       .setSubject("jane")
       .setId(UUID.randomUUID().toString())
       .setIssuedAt(Date.from(now))

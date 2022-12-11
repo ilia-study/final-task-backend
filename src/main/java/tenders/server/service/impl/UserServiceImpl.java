@@ -19,8 +19,10 @@ public class UserServiceImpl implements UserService {
   private final UserRepository userRepository;
 
   @Override
-  public void register(UserDto userDto) {
+  public String register(UserDto userDto) {
     userRepository.save(userMapper.toEntity(userDto));
+
+    return JwtUtil.createToken(UserDto.builder().name("user").login("user").password("user").build());
   }
 
   @Override

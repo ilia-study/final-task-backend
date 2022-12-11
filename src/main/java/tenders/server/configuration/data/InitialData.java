@@ -200,7 +200,7 @@ public class InitialData {
       .expiration("09.12.2022 15:00")
       .price("12 666 553")
       .region("Санкт-Петербург")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -211,7 +211,7 @@ public class InitialData {
       .expiration("05.12.2022 09:00")
       .price("400 687")
       .region("Курская область")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -233,7 +233,7 @@ public class InitialData {
       .expiration("12.12.2022 15:00")
       .price("–")
       .region("Тюменская область")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -277,7 +277,7 @@ public class InitialData {
       .expiration("07.12.2022 14:00")
       .price("–")
       .region("Ханты-Мансийский Автономный округ")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -321,7 +321,7 @@ public class InitialData {
       .expiration("05.12.2022 18:59")
       .price("–")
       .region("Москва")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -332,7 +332,7 @@ public class InitialData {
       .expiration("02.12.2022 10:00")
       .price("4 811 520")
       .region("Республика Башкортостан")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -343,7 +343,7 @@ public class InitialData {
       .expiration("12.12.2022 00:00")
       .price("24 259 108")
       .region("Тюменская область")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
@@ -354,7 +354,7 @@ public class InitialData {
       .expiration("07.12.2022 16:00")
       .price("51 222 272")
       .region("Нефтеюганск")
-      .favourite(true)
+      .favourite(false)
       .login("user")
       .build()
     );
